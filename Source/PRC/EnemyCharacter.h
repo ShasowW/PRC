@@ -13,6 +13,14 @@ public:
     float MaxHP = 100.f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
     float CurrentHP = 100.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats") //Test new attribute
+    float MaxShield = 0.f;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats") // Test new atrribute
+    float CurrentShield = 0.f;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
     float AttackDamage = 15.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage Calculation")
+	float DamageReceived = 100.f; //Messing with damage calculation
+
 };
