@@ -15,6 +15,11 @@ bool UInventoryComponent::RemoveItem(const FString& ItemName)
     return Items.RemoveSingle(ItemName) > 0;
 }
 
+bool UInventoryComponent::RemoveALLItems(const FString& ItemName)
+{
+	return Items.Remove(ItemName) > 0;
+}
+
 int32 UInventoryComponent::CountItem(const FString& ItemName) const
 {
     int32 Count = 0;

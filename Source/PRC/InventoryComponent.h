@@ -17,6 +17,9 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Inventory")
     bool RemoveItem(const FString& ItemName);
 
+	UFUNCTION(BlueprintCallable, Category = "Inventory")
+	bool RemoveALLItems(const FString& ItemName);
+
     UFUNCTION(BlueprintPure, Category = "Inventory")
     int32 CountItem(const FString& ItemName) const;
 };
