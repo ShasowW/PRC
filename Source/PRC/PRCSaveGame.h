@@ -15,5 +15,8 @@ public:
     float Hp = 100.f;
 
     UPROPERTY(BlueprintReadWrite, Category = "Save")
+    FString CurrentLevelName;
+
+    UPROPERTY(BlueprintReadWrite, Category = "Save")
     TArray<FString> Inventory;
 };
